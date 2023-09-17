@@ -15,4 +15,15 @@ public class  Product {
     public void removeProducts(int quantity) {
         this.quantity -= quantity;
     }
+
+    public String toString () {
+        return name.toUpperCase()
+            + ", $"
+            + String.format("%.2f", price)
+            + ", "
+            + quantity
+            + ", "
+            + " Total: $"
+            + String.format("%.2f", TotalValueInStock());
+    }
 }
