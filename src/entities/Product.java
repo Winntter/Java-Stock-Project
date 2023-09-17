@@ -22,7 +22,7 @@ public class  Product {
             + String.format("%.2f", price)
             + ", "
             + quantity
-            + ", "
+            + " units, "
             + " Total: $"
             + String.format("%.2f", TotalValueInStock());
     }
